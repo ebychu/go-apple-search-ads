@@ -211,18 +211,23 @@ type GrandTotals struct {
 }
 
 type Statistics struct {
-	Impressions    int     `json:"impressions"`
-	Taps           int     `json:"taps"`
-	Installs       int     `json:"installs"`
-	NewDownloads   int     `json:"newDownloads"`
-	Redownloads    int     `json:"redownloads"`
+	Impressions int `json:"impressions"`
+	Taps        int `json:"taps"`
+	//Installs       int     `json:"installs"`
+	Installs int `json:"tapInstalls"`
+	//NewDownloads   int     `json:"newDownloads"`
+	NewDownloads int `json:"tapNewDownloads"`
+	//Redownloads    int     `json:"redownloads"`
+	Redownloads    int     `json:"tapRedownloads"`
 	LatOnInstalls  int     `json:"latOnInstalls"`
 	LatOffInstalls int     `json:"latOffInstalls"`
 	TTR            float64 `json:"ttr"`
-	AvgCPA         Amount  `json:"avgCPA"`
-	AvgCPT         Amount  `json:"avgCPT"`
-	LocalSpend     Amount  `json:"localSpend"`
-	ConversionRate float64 `json:"conversionRate"`
+	//AvgCPA         Amount  `json:"avgCPA"`
+	AvgCPA     Amount `json:"tapInstallCPI"`
+	AvgCPT     Amount `json:"avgCPT"`
+	LocalSpend Amount `json:"localSpend"`
+	//ConversionRate float64 `json:"conversionRate"`
+	ConversionRate float64 `json:"tapInstallRate"`
 	Date           string  `json:"date,omitemtpy"`
 }
 
