@@ -1,4 +1,4 @@
-module github.com/zhyc9de/go-apple-search-ads
+module github.com/ebychu/go-apple-search-ads
 
 go 1.12
 
